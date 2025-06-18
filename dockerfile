@@ -9,6 +9,7 @@ COPY target/config-server-0.0.1-SNAPSHOT.jar app.jar
 
 # Expone el puerto (opcional, pero buena práctica)
 EXPOSE 9000
+ENV PORT=9000
 
 # Comando para ejecutar el microservicio
 ENTRYPOINT ["java", "-jar", "app.jar"]
